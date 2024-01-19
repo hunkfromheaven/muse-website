@@ -1,3 +1,17 @@
+// Randomly select the rare logo with 1% probability
+const useRareLogo = Math.random() < 0.01;
+
+// Get the logo container and image elements
+const logoContainer = document.getElementById('logo-container');
+const logoImage = document.getElementById('logo-image');
+
+// Set the logo image source based on the probability
+if (useRareLogo) {
+    logoImage.src = 'images/musecastY2K_RARE.gif';
+} else {
+    logoImage.src = 'images/MUSEY2K.png';
+}
+
 // Function to scroll to a specific instance of an element
 function scrollToElement(elementSelector, instance = 0) {
     const elements = document.querySelectorAll(elementSelector);
@@ -26,37 +40,64 @@ link3.addEventListener('click', () => {
 // Slick Carousel initialization and event listeners
 document.addEventListener('DOMContentLoaded', function () {
     const musicCarousel = document.getElementById('music-carousel');
+    const gamesCarousel = document.getElementById('games-carousel');
 
-    // Initialize Slick Carousel
-    $(musicCarousel).slick({
-        slidesToShow: 1,
+    // Initialize Music Carousel
+    $('#music-carousel').slick({
+        slidesToShow: 2.99,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-		responsive: [
-		        {
-		            breakpoint: 1024, // Medium devices (tablets, landscape phones)
-		            settings: {
-		                slidesToShow: 2,
-		            }
-		        },
-		        {
-		            breakpoint: 768, // Small devices (portrait phones)
-		            settings: {
-		                slidesToShow: 1,
-		            }
-		        },
-		        // Add more breakpoints and settings as needed
-		    ]
-        // Add any other options you want to customize
+        autoplaySpeed: 8000,
+        pauseOnFocus: true,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
-    // Event listener to scroll to the next slide
+    // Initialize Games Carousel with Center Mode
+    $('#games-carousel').slick({
+        centerMode: true,
+        centerPadding: '200px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    // Event listener to scroll to the next slide in the Music Carousel
     document.getElementById('nextSlideBtn').addEventListener('click', function () {
         $(musicCarousel).slick('slickNext');
     });
 
-    // Event listener to scroll to the previous slide
+    // Event listener to scroll to the previous slide in the Music Carousel
     document.getElementById('prevSlideBtn').addEventListener('click', function () {
         $(musicCarousel).slick('slickPrev');
     });

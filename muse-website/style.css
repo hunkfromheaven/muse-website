@@ -44,7 +44,7 @@ nav{
 }
 
 .link a{
-    position: relative;
+    position: absolute;
     padding-bottom: 0.75rem;
     color: #fff;
 }
@@ -257,6 +257,73 @@ section .header{
     border-color: #1e40af;
 }
 
+.btn {
+	font-size: 1rem;
+	background-image: linear-gradient(#8244C6, #456FC6);
+}
+
+.btn a{
+	font-size:1rem;
+}
+
+.button:hover{
+	background-color: #7851A9;
+}
+
+/* Add this CSS to center and style the "Play Now" links in the cards of the carousel */
+.card a {
+    display: block; /* Make the link a block-level element */
+    color: #fff; /* Set the text color to white */
+    text-align: center; /* Center-align the text */
+    margin-top: 1rem; /* Add some top margin for spacing */
+    font-size: 1rem; /* Set the font size as needed */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+.card a:hover {
+    color: #1e40af; /* Change the text color on hover */
+}
+
+.games-list h4{
+	padding-bottom:1rem;
+	padding-top:1rem;
+	background-image: linear-gradient(#fa5c5c, #fb7d7d);
+	width: 75%;
+	border-radius:10px;
+	margin:auto;
+	font-size:1.5rem;
+}
+
+.void-list .card{
+    background-image: url('/images/stars.gif'); /* Adjust the file extension based on the actual format of your image */
+	background-size: auto; /* Set background size to auto */
+	background-repeat: repeat; /* Make the background repeat */
+
+    background-position: center;
+    /* Add any other styling you need for the .void-list class */
+}
+
+.games-list .card{
+    background-image: linear-gradient(#27272a, #27272a);
+	
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content within the rounded corners */
+	margin:auto;
+	width:75%;
+	padding-bottom:1rem;
+	padding-top:1rem;
+}
+
+.card p{
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
+.card {
+	padding-top:2rem;
+}
+
+
 .slick-carousel {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
@@ -277,12 +344,23 @@ section .header{
  .slick-slide {
      margin: 0 10px;
  }
+ 
+ .container a {
+     display: block; /* Make the link a block-level element */
+     color: #fff; /* Set the text color to white */
+	 padding-top:1rem;
+     text-align: center; /* Center-align the text */
+     margin-top: 1rem; /* Add some top margin for spacing */
+     font-size: 1rem; /* Set the font size as needed */
+     transition: all 0.3s ease; /* Add transition effect */
+ }
 
 
 
 .card h4 {
     color: #FAF9F6; /* Change this to your desired text color */
 	text-align:center;
+	padding-bottom:0.5rem;
 }
 
 .card p {
@@ -292,6 +370,11 @@ section .header{
 
 .card a {
 	text-align:center;
+}
+
+.container a{
+	text-align:center;
+	margin:auto;
 }
 
 .iframe {
@@ -371,30 +454,50 @@ footer .column > a:hover{
     text-align: center;
 }
 
-@media (max-width: 900px) {
-    /* Your styles for width less than 900px */
+/* Default styles for screens larger than 900px */
+@media (min-width: 901px) {
+    /* Your existing styles for larger screens */
     .nav-links {
-        display: none;
+        display: flex;
     }
+
     header {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     header .image {
         grid-area: 1/1/2/2;
     }
+
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .pricing {
         grid-template-columns: repeat(2, 1fr);
     }
+
     footer {
         grid-template-columns: 1fr 200px;
     }
+
+    #music-carousel .slick-carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
+/* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
-    /* Your styles for width less than 600px */
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+	
+
     header .image::before {
         display: none;
     }
@@ -410,28 +513,20 @@ footer .column > a:hover{
     footer {
         grid-template-columns: 1fr 150px;
     }
-}
 
-@media (max-width: 600px) {
     #music-carousel .slick-carousel {
-        /* Adjust the number of slides or any other styles for smaller screens */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    #music-carousel .slick-carousel {
-        /* Adjust the number of slides or any other styles for medium screens */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 901px) {
-    #music-carousel .slick-carousel {
-        /* Default styles for larger screens, adjust as needed */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+	
+	.games-list .card{
+	    background-color: #27272a; /* Dark gray background color */
+	    border-radius: 15px; /* Rounded corners */
+	    overflow: hidden; /* Hide overflowing content within the rounded corners */
+		margin:auto;
+		width:100%;
+		padding-bottom:1rem;
+		padding-top:1rem;
+	}
+	
 }
