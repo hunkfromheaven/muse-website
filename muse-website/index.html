@@ -15,7 +15,7 @@
 	<body>
 		<nav>
 			<div class="nav-logo">
-				<a href="#">
+				<a href="https://amused.itch.io/" target="_blank">
 				<img src="images/logo.png">
 				</a>
 			</div>
@@ -25,7 +25,7 @@
 					<li id="link2" class="link"><a href="#">GAMES</a></li>
 					<li id="link3" class="link"><a href="#"><span>THE VOID</span></a></li>
 					-->
-				<h1 style="color:white;font-size:3rem;">GRAND OPENING!</h1>
+				<h1 style="color:white;">GRAND OPENING!</h1>
 			</ul>
 			<a href="https://amused.itch.io/upside-down-pineapple-race" class="btn" target="_blank">PLAY NOW!</a>
 			
@@ -55,7 +55,7 @@
 		
 		<!-- MUSIC SECTION -->
 		<section class="container">
-			<h2 class="header">MUSIC</h2>
+			<h1 class="header" style="font-size:3rem;"><span>MUSIC</span></h1>
 			<p class="sub-header">
 				introducing krump god...
 			</p>
@@ -109,7 +109,7 @@
 		
 		<!-- GAMES SECTION -->
 		<section class="container">
-			<h2 class="header">GAMES</h2>
+			<h1 class="header" style="font-size:3rem;"><span>GAMES</span></h1>
 			<p class="sub-header">
 				muse games, enjoy friends!
 			</p>
@@ -132,17 +132,20 @@
 				    if (isWindows) {
 				        // Modify HTML for Windows users
 				        gameCardContainer.innerHTML = `
-				            <h4>Upside Down Pineapple Race !!</h4>
+				            <h4><a href="https://amused.itch.io/upside-down-pineapple-race" target="_blank" style="padding-bottom: 1rem; font-size: 2rem;">Upside Down Pineapple Race !!</a></h4>
 				            <p>
 				                My first game! Made for DevLUp's UPSIDE-DOWN game jam! <br>(mac compatible version for download on itch.io!)
 				            </p>
+						<!-- UDPR GAMES EMBED [MUST BE FIXED] 
 				            <iframe style="width: 95%; display: block; margin-left: auto; margin-right: auto;" height="400" frameborder="0" src="https://itch.io/embed-upload/9124397?color=333333" allowfullscreen="true" width="1142" height="668"></iframe>
+						-->
+					    <iframe style="width: 80%; display: block; margin-left: auto; margin-right: auto; padding-top: 1rem; border-radius:15px;" width="50%" height="150" src="https://itch.io/embed/2364489?linkback=true"></iframe>
+
 				        `;
 				    } else {
 				        // Modify HTML for users on other operating systems
 				        gameCardContainer.innerHTML = `
-				            <h4>Upside Down Pineapple Race !!</h4>
-				            <p>
+				            <h4><a href="https://amused.itch.io/upside-down-pineapple-race" target="_blank" style="padding-bottom: 1rem; font-size: 2rem;">Upside Down Pineapple Race !!</a></h4>
 				                My first game! Made for DevLUp's UPSIDE-DOWN game jam! <br>(mac compatible version for download on itch.io!)
 				            </p>
 				            <iframe style="width: 80%; display: block; margin-left: auto; margin-right: auto; padding-top: 1rem; border-radius:15px;" width="50%" height="150" src="https://itch.io/embed/2364489?linkback=true"></iframe>
@@ -182,7 +185,8 @@
 		
 		<hr>
 		
-		<!-- VOID SECTION -->
+		
+		<!-- VOID SECTION 
 		<section class="container">
 			<h2 class="header">THE VOID</h2>
 			<p class="sub-header">
@@ -190,7 +194,7 @@
 			</p>
 			<div class="void-list">
 				
-				<!-- Game 1 -->
+				
 				<div class="card">
 					<h4>
 						what do you think of this?
@@ -209,11 +213,13 @@
 		</section>
 		
 		
-		
+		-->
 		
 		<footer class="container">
 			<div class="logo">
+				<a href="https://amused.itch.io/" target="_blank">
 				<img src="images/logo.png">
+				</a>
 			</div>
 			<!-- <p>yo! check my socials below!</p> -->
 			<div class="socials">

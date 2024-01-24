@@ -145,6 +145,19 @@ header .content h1 span{
     -webkit-text-stroke: 1px #fff;
 }
 
+container h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
 header .content p{
     margin-bottom: 2rem;
     color: #ccc;
@@ -368,8 +381,10 @@ section .header{
 	text-align:center;
 }
 
-.card a {
-	text-align:center;
+
+
+.card a:hover{
+	color: #ADD8E6;
 }
 
 .container a{
