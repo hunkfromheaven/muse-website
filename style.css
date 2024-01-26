@@ -511,10 +511,10 @@ footer .column > a:hover{
 @media (max-width: 600px) {
 	
 	
-	.container{
+	.container .slick-carousel{
 	    max-width: 1200px;
 	    margin: auto;
-	    padding: 0rem 0rem;
+	    padding: 2rem 0rem;
 	}
 	
     .nav-links {
