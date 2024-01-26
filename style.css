@@ -304,7 +304,7 @@ section .header{
 
 
 .void-list .card{
-    background-image: url('/images/stars.gif'); /* Adjust the file extension based on the actual format of your image */
+    /*background-image: url('/images/stars.gif'); /* Adjust the file extension based on the actual format of your image */
 	background-size: auto; /* Set background size to auto */
 	background-repeat: repeat; /* Make the background repeat */
 
@@ -509,9 +509,19 @@ footer .column > a:hover{
 
 /* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
+	
+	
+	.container{
+	    max-width: 1200px;
+	    margin: auto;
+	    padding: 0rem 0rem;
+	}
+	
     .nav-links {
         display: none;
     }
+	
+
 
     header {
         grid-template-columns: repeat(1, 1fr);
