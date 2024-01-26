@@ -96,6 +96,12 @@ nav{
     padding: 2rem 2rem;
 }
 
+.music-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
 .blur {
     position: absolute;
     box-shadow: 0 0 1000px 35px #CBC3E3;
@@ -371,6 +377,15 @@ section .header{
      margin-top: 1rem; /* Add some top margin for spacing */
      transition: all 0.3s ease; /* Add transition effect */
  }
+ 
+ .music-container a {
+     display: block; /* Make the link a block-level element */
+     color: #fff; /* Set the text color to white */
+	 padding-top:1rem;
+     text-align: center; /* Center-align the text */
+     margin-top: 1rem; /* Add some top margin for spacing */
+     transition: all 0.3s ease; /* Add transition effect */
+ }
 
 
 
@@ -392,6 +407,11 @@ section .header{
 }
 
 .container a{
+	text-align:center;
+	margin:auto;
+}
+
+.music-container a{
 	text-align:center;
 	margin:auto;
 }
@@ -510,11 +530,16 @@ footer .column > a:hover{
 /* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
 	
+	.image#logo-container {
+	    margin: -1.5rem;
+	}
 	
-	.container .slick-carousel{
+	
+	
+	.music-container{
 	    max-width: 1200px;
 	    margin: auto;
-	    padding: 2rem 0rem;
+	    padding: 0rem 0rem;
 	}
 	
     .nav-links {
