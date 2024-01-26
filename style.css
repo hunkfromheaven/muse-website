@@ -478,7 +478,7 @@ footer .column > a:hover{
 @media (min-width: 901px) {
     /* Your existing styles for larger screens */
     .nav-links {
-        display: flex;
+        display: none;
     }
 
     header {
