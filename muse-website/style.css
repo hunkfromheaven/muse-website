@@ -19,7 +19,8 @@ a{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #1f1f1f;
+    background-image: radial-gradient(#1b1b1d, #27272a);
+
 }
 
 nav{
@@ -79,7 +80,7 @@ nav{
     font-size: 1rem;
     color: #fff;
     background-color: #1d4ed8;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -232,12 +233,7 @@ section .header{
     margin-bottom: 2rem;
 }
 
-.pricing .card h4{
-    margin-bottom: 1rem;
-    color: #a0a0ad;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+
 
 .pricing .card h3{
     color: #fff;
@@ -289,7 +285,6 @@ section .header{
     color: #fff; /* Set the text color to white */
     text-align: center; /* Center-align the text */
     margin-top: 1rem; /* Add some top margin for spacing */
-    font-size: 1rem; /* Set the font size as needed */
     transition: all 0.3s ease; /* Add transition effect */
 }
 
@@ -297,15 +292,16 @@ section .header{
     color: #1e40af; /* Change the text color on hover */
 }
 
-.games-list h4{
+.games-list .card h4{
 	padding-bottom:1rem;
 	padding-top:1rem;
-	background-image: linear-gradient(#fa5c5c, #fb7d7d);
+	background-image: linear-gradient(#F8C8DC, #456FC6);
 	width: 75%;
 	border-radius:10px;
 	margin:auto;
-	font-size:1.5rem;
+	font-size:2rem;
 }
+
 
 .void-list .card{
     background-image: url('/images/stars.gif'); /* Adjust the file extension based on the actual format of your image */
@@ -316,8 +312,9 @@ section .header{
     /* Add any other styling you need for the .void-list class */
 }
 
+
 .games-list .card{
-    background-image: linear-gradient(#27272a, #27272a);
+    background-image: radial-gradient(#27272a, #A7C7E7);
 	
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Hide overflowing content within the rounded corners */
@@ -327,13 +324,21 @@ section .header{
 	padding-top:1rem;
 }
 
+.games-list p{
+	color:white;
+	margin:auto;
+	width:60%;
+}
+
 .card p{
+	color: white;
+	margin: auto;
 	padding-top:1rem;
 	padding-bottom:1rem;
 }
 
 .card {
-	padding-top:2rem;
+	padding-top:0rem;
 }
 
 
@@ -364,7 +369,6 @@ section .header{
 	 padding-top:1rem;
      text-align: center; /* Center-align the text */
      margin-top: 1rem; /* Add some top margin for spacing */
-     font-size: 1rem; /* Set the font size as needed */
      transition: all 0.3s ease; /* Add transition effect */
  }
 
@@ -409,6 +413,7 @@ footer{
 }
 
 footer .logo{
+	z-index:-1;
     max-width: 100px;
     margin-bottom: 1rem;
 	margin: auto;
@@ -542,6 +547,40 @@ footer .column > a:hover{
 		width:100%;
 		padding-bottom:1rem;
 		padding-top:1rem;
+	}
+	
+	.games-list .card h4{
+		padding-bottom:1rem;
+		padding-top:1rem;
+		background-image: linear-gradient(#F8C8DC, #fb7d7d);
+		width: 75%;
+		border-radius:10px;
+		margin:auto;
+		font-size:1.75rem;
+	}
+	
+	.btn {
+	    padding: 1rem 1rem;
+	    font-size: 1rem;
+	    color: #fff;
+	    background-color: #1d4ed8;
+	    border-radius: 15px;
+	    cursor: pointer;
+	    transition: all 0.3s ease;
+	}
+	
+	p{
+	}
+	
+	body{
+
+	    background-image: radial-gradient(#1d4ed8, #27272a);
+	}
+	
+	.games-list p{
+		color:white;
+		margin:auto;
+		width:75%;
 	}
 	
 }
