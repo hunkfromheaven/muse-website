@@ -97,6 +97,18 @@ nav{
     padding: 2rem 2rem;
 }
 
+.void-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.void-container .card h4{
+	text-align:justify;
+	width:60%;
+	margin:auto;
+}
+
 .music-container{
     max-width: 1200px;
     margin: auto;
@@ -542,6 +554,25 @@ footer .column > a:hover{
 	    margin: auto;
 	    padding: 0rem 0rem;
 	}
+	
+	.void-container{
+	    max-width: 1200px;
+	    margin: auto;
+	    padding: 2rem 0rem;
+	}
+	
+	.void-container iframe{
+	    width: 90%;
+	    margin: auto;
+	    padding: 0rem 0rem;
+	}
+	
+	.void-container .card h4{
+		text-align:justify;
+		width:100%;
+	}
+	
+	
 	
     .nav-links {
         display: none;

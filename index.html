@@ -186,7 +186,7 @@
 						I have plenty of game ideas and projects i'm working on and can't wait to show you all. stay tuned for updates !!
 					</p>
 					
-					<img style="width:50%; margin:auto; filter: blur(6.5px);" src="images/museracing.png">
+					<img style="width:20%; margin:auto; filter: blur(7px);" src="images/wiz.png">
 					
 
 				</div>
@@ -221,7 +221,7 @@
 		
 		
 		<!-- VOID SECTION -->
-		<section class="container">
+		<section class="void-container">
 			<h1 class="header" style="font-size:3rem;">✨<span>THE VOID</span>✨</h1>
 			<!-- VOID SECTION 
 			<p class="sub-header">
@@ -245,18 +245,73 @@
 						-->
 						
 						<div style="text-align: center;">
-						<iframe width="560" height="315" style="border:10px solid #FFF; display: inline-block;" src="https://www.youtube.com/embed/laj_Xc478NE?si=gA7qCO652w915r9r&amp;start=558" title="YouTube video player" frameborder="0" allow=	"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="60%" height="315" style="border:10px solid #FFF; display: inline-block;" src="https://www.youtube.com/embed/laj_Xc478NE?si=gA7qCO652w915r9r&amp;start=558" title="YouTube video player" frameborder="0" allow=	"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 
 						
 						
 						<br>
 					    
-						<div style="text-align: justify; width:70%; margin:auto;">
+						<div style="text-align: justify; width:80%; margin:auto;">
 						<h4>
-					        This is the first stream of MUSECAST CHAPTER 1, premiering live on February 4th, 2023. It's fun to look back and see how much (and how little) changes over time. I hope you enjoy clicking through and let me know if you find a moment that makes you laugh :D <br><br>
+					        This is the first stream of MUSECAST CHAPTER 1, premiering live on February 4th, 2023. It's fun to look back and see how much (and how little) has changed over time. I hope you enjoy scrolling through and let me know if you find a moment that makes you laugh :D <br><br>
 					    </h4>
-						<h2 style="margin:auto; text-align:center; color:white;"> HAPPY STREAMIVERSARY EVERYBODY!! </h2>
+						
+						
+					<!-- STREAMIVERSARY CODE AND TEXT - EXPERIMENTAL -->
+					<h2 id="streamiversary" style="margin:auto; text-align:center; color: transparent; background: -webkit-linear-gradient(#fff, #456FC6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">HAPPY STREAMIVERSARY EVERYBODY!!<br><br></h2>
+
+					<style>
+					  @keyframes wavy {
+					    0% { transform: translateY(0); }
+					    50% { transform: translateY(-5px); }
+					    100% { transform: translateY(0); }
+					  }
+  
+					  .wavy {
+					    animation: wavy 0.5s infinite;
+					    display: inline-block;
+					    color: transparent;
+						font-size:2.1rem;
+					    background: -webkit-linear-gradient(#fff, #456FC6);
+					    -webkit-background-clip: text;
+					    -webkit-text-fill-color: transparent;
+					  }
+					</style>
+
+					<script>
+					  function updateText() {
+					    let text = "HAPPY STREAMIVERSARY EVERYBODY!!"; // Text to display
+					    let delay = 200;
+					    let h2 = document.getElementById("streamiversary");
+					    h2.textContent = ''; // Clear existing content
+					    text.split("").forEach((letter, index) => {
+					      let span = document.createElement("span");
+					      span.textContent = letter;
+					      h2.appendChild(span);
+					      // Add space after each letter except the last one
+					      if (letter !== '') {
+					        h2.appendChild(document.createTextNode(''));
+					      }
+						  if (letter == ' '){
+							  h2.appendChild(document.createElement('br'));
+						  }
+					      setTimeout(() => {
+					        span.classList.add("wavy");
+					      }, index * 60 + delay);
+					    });
+					  }
+
+					  // Call the function to set the initial text and apply the wavy effect
+					  updateText();
+					</script>
+
+					<!-- STREAMIVERSARY CODE AND TEXT - EXPERIMENTAL -->
+					
+					
+					
+						
+						
 						</div>
 						
 					</div>
