@@ -546,6 +546,17 @@ footer .column > a:hover{
         display: none;
     }
 	
+	nav{
+	    max-width: 1200px;
+	    margin: auto;
+		margin-bottom:-25px;
+	    padding: 0.5rem 1rem;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    gap: 2rem;
+	}
+	
 
 
     header {
