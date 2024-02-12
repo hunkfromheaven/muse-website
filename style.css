@@ -97,6 +97,14 @@ nav{
     padding: 2rem 2rem;
 }
 
+.games-container{
+
+    background-image: radial-gradient(#27272a, #A7C7E7);
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
 .void-container{
     max-width: 1200px;
     margin: auto;
@@ -314,7 +322,7 @@ section .header{
 .games-list .card h4{
 	padding-bottom:1rem;
 	padding-top:1rem;
-	background-image: linear-gradient(#F8C8DC, #456FC6);
+    background-image: radial-gradient(#1b1b1d, #27272a);
 	width: 75%;
 	border-radius:10px;
 	margin:auto;
@@ -391,6 +399,15 @@ section .header{
      transition: all 0.3s ease; /* Add transition effect */
  }
  
+ .games-container a {
+     display: block; /* Make the link a block-level element */
+     color: #fff; /* Set the text color to white */
+	 padding-top:1rem;
+     text-align: center; /* Center-align the text */
+     margin-top: 1rem; /* Add some top margin for spacing */
+     transition: all 0.3s ease; /* Add transition effect */
+ }
+ 
  .music-container a {
      display: block; /* Make the link a block-level element */
      color: #fff; /* Set the text color to white */
@@ -420,6 +437,11 @@ section .header{
 }
 
 .container a{
+	text-align:center;
+	margin:auto;
+}
+
+.games-container a{
 	text-align:center;
 	margin:auto;
 }
@@ -558,7 +580,7 @@ footer .column > a:hover{
 	.void-container{
 	    max-width: 1200px;
 	    margin: auto;
-	    padding: 2rem 0rem;
+	    padding: 200rem 0rem;
 	}
 	
 	.void-container iframe{
