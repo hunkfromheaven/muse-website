@@ -580,7 +580,7 @@ footer .column > a:hover{
 	.void-container{
 	    max-width: 1200px;
 	    margin: auto;
-	    padding: 200rem 0rem;
+	    padding: 2rem 0rem;
 	}
 	
 	.void-container iframe{
@@ -652,11 +652,10 @@ footer .column > a:hover{
 	.games-list .card h4{
 		padding-bottom:1rem;
 		padding-top:1rem;
-		background-image: linear-gradient(#F8C8DC, #fb7d7d);
 		width: 75%;
 		border-radius:10px;
 		margin:auto;
-		font-size:1.75rem;
+		font-size:1.5rem;
 	}
 	
 	.btn {
