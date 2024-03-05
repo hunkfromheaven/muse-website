@@ -32,11 +32,19 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+	width: 70%;
 }
+
 
 .nav-logo{
     max-width: 100px;
 }
+
+	nav a i {
+    font-size: 52px; /* Adjust the size as needed */
+	color: white;
+}
+
 
 .nav-links{
     list-style: none;
@@ -100,10 +108,32 @@ nav{
 .games-container{
 
     background-image: radial-gradient(#27272a, #A7C7E7);
-    max-width: 1200px;
+	
+    /*
+	max-width: 1200px;
     margin: auto;
     padding: 2rem 2rem;
+	/**/
 }
+
+.featured-container{
+	background-image: radial-gradient(#27272a, #A7C7E7);
+}
+
+.featured-container h4{
+		
+		
+	    width: 60%;
+	    margin: auto;
+	    padding: 0rem 0rem;
+		
+}
+
+.featured-container iframe{
+	width: 60%;
+}
+
+
 
 .void-container{
     max-width: 1200px;
@@ -116,6 +146,15 @@ nav{
 	width:60%;
 	margin:auto;
 }
+
+.void-container .card h2{
+	color:white;
+	margin:auto;
+	width:60%;
+	text-align: center;
+}
+
+	
 
 .music-container{
     max-width: 1200px;
@@ -535,6 +574,40 @@ footer .column > a:hover{
     .nav-links {
         display: flex;
     }
+	
+	nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+	width: 40%;
+}
+
+	nav a i {
+    font-size: 52px; /* Adjust the size as needed */
+	color: white;
+}
+
+.featured-container h4{
+		
+		
+	    width: 40%;
+	    margin: auto;
+	    padding: 0rem 0rem;
+		
+}
+
+.featured-container iframe{
+	width: 50%;
+}
+
+
+ 
+ 
+
 
     header {
         grid-template-columns: repeat(2, 1fr);
@@ -569,13 +642,30 @@ footer .column > a:hover{
 	    margin: -1.5rem;
 	}
 	
-	
+	nav a i {
+		margin-left:-2.5rem;
+    font-size: 52px; /* Adjust the size as needed */
+	color: white;
+}
 	
 	.music-container{
 	    max-width: 1200px;
 	    margin: auto;
 	    padding: 0rem 0rem;
 	}
+	
+	.featured-container h4{
+		
+		
+	    width: 90%;
+	    margin: auto;
+	    padding: 0rem 0rem;
+		
+	}
+	
+	.featured-container iframe{
+	width: 90%;
+}
 	
 	.void-container{
 	    max-width: 1200px;
@@ -591,7 +681,7 @@ footer .column > a:hover{
 	
 	.void-container .card h4{
 		text-align:justify;
-		width:100%;
+		width:90%;
 	}
 	
 	
@@ -609,6 +699,7 @@ footer .column > a:hover{
 	    align-items: center;
 	    justify-content: space-between;
 	    gap: 2rem;
+		width:80%
 	}
 	
 
