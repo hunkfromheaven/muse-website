@@ -806,3 +806,10 @@ footer .column > a:hover{
 
 	
 }
+
+@media (max-width: 525px) {
+	nav a i{
+	    font-size:42px;
+		margin-left: -10px;
+	}
+}
