@@ -568,8 +568,32 @@ footer .column > a:hover{
     text-align: center;
 }
 
+@media (min-width: 1500px) {
+	
+.featured-container iframe{
+	width: 35%;
+}
+
+.featured-container h4 {
+    width: 30%;
+    margin: auto;
+    padding: 0rem 0rem;
+}
+
+.games-list .card {
+    background-image: radial-gradient(#27272a, #A7C7E7);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+	
+}
+
 /* Default styles for screens larger than 900px */
-@media (min-width: 901px) {
+@media (max-width: 901px) {
     /* Your existing styles for larger screens */
     .nav-links {
         display: flex;
@@ -699,7 +723,8 @@ footer .column > a:hover{
 	    align-items: center;
 	    justify-content: space-between;
 	    gap: 2rem;
-		width:80%
+		width:80%;
+		padding-top:30px;
 	}
 	
 
@@ -772,5 +797,13 @@ footer .column > a:hover{
 		margin:auto;
 		width:75%;
 	}
+	
+	
+	.void-container .card img {
+    width: 100% !important;
+    display: flex;
+}
+
+
 	
 }
