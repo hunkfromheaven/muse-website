@@ -14,6 +14,15 @@ img{
     display: flex;
 }
 
+#featured-img {
+transition: transform 0.5s ease; /* Ensure transition is on transform property */
+}
+
+#featured-img:hover {
+transform: scale(1.08); /* Scale up on hover */
+}
+
+
 a{
     text-decoration: none;
 }
